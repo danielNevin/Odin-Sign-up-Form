@@ -1,0 +1,113 @@
+@font-face {
+    font-family: NorseBold;
+    src: url(fonts/Norse-Bold.otf)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.total-container {
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    width: auto;
+    min-height: 100%;
+    margin: 0px 0px;
+}
+
+.logo-container {
+    position: relative;
+    width: clamp(350px, 35%, 700px);
+    height: 100%;
+    background-image: url('/images/imleedh-ali-Uf-_p8zZiT8-unsplash.jpg');
+    background-size: cover;
+    background-position: 0%;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 16%;
+    left: 0%;
+    width: 100%;
+    height: 16%;
+    background-color: transparent;
+}
+
+.odin-logo-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+#odin-logo {
+    height: 13vh;
+}
+
+.logo-panel {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.logo-panel-text {
+    top: 30%;
+    font-size: 10vh;
+    color: white;
+    font-family: NorseBold;
+}
+
+.panel-image-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.photo-reference {
+    position: absolute;
+    bottom: 1vh;
+    left: 0%;
+    width: 100%;
+    height: 3vh;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1vh;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    position: relative;
+    height: 100%;
+    background-color: bisque;
+}
+
+.sign-up-header {
+    height: 32%;
+    background-color: rgb(245, 245, 245);
+}
+
+.sign-up-forms {
+    flex: auto;
+    background-color: white;
+    box-shadow: 0px 1px 10px -5px rgb(56, 56, 56);
+}
+
+.sign-up-footer {
+    height: 32%;
+    background-color: rgb(245, 245, 245);
+    box-shadow: inset 0px 2px 20px -5px rgb(56, 56, 56);
+}
