@@ -13,7 +13,7 @@
         <div class="logo-container">
             <div class="logo-wrapper">
                 <div class="odin-logo-wrapper">
-                    <img id="odin-logo" src="/images/odin-lined.png" alt="">
+                    <img id="odin-logo" src="./images/odin-lined.png" alt="">
                     <div class="logo-panel-text">ODIN</div>
                 </div>
                 <div class="logo-panel"></div>
@@ -23,16 +23,87 @@
 
         <div class="sign-up-container">
             <div class="sign-up-header">
-                
+                <p class="sign-up-header-text" id="top-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p class="sign-up-header-text" id="bottom-text">You <em>know</em> you want to.</p>
             </div>
             <div class="sign-up-forms">
-
+                <p class="forms-header">Let's do this!</p>
+                <div class="input-form-container">
+                    <div class="input-form-column">
+                        <fieldset id="fieldset1">
+                            <ul>
+                                <li>
+                                    <div class="input-form">
+                                        <label class="input-header" for="first_name">FIRST NAME*</label>
+                                        <input type="text" name="first_name" required/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input-form">
+                                        <label class="input-header" for="user_email">EMAIL*</label>
+                                        <input type="email" name="user_email" required/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input-form">
+                                        <label class="input-header" for="user_password">PASSWORD*</label>
+                                        <input id="password1" type="password" name="user_password" required/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="input-form-column">
+                        <fieldset id="fieldset2">
+                            <ul>
+                                <li>
+                                    <div class="input-form">
+                                        <label class="input-header" for="last_name">LAST NAME</label>
+                                        <input type="text" name="last_name" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input-form">
+                                        <label class="input-header" for="phone_no">PHONE NUMBER</label>
+                                        <input type="tel" name="phone_no" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input-form">
+                                        <label class="input-header" for="user_password_confirm">CONFIRM PASSWORD*</label>
+                                        <input id="password2" type="password" name="user_password_confirm" required/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
             </div>
             <div class="sign-up-footer">
-
+                <div class="button-wrapper">
+                    <button type="submit" id="submission-button">Create Account</button>
+                </div>
+                <div class="footer-text-wrapper">
+                    <div id="footer-text">Already have an account?</div>
+                    <div id="log-in-text">Log in</div>
+                </div>
+                
             </div>
         </div>
-
+        <script>
+            document.getElementById("submission-button").addEventListener("click", function () {
+                var password = document.getElementById("password1").value;
+                var confirmpassword = document.getElementById("password2").value;
+                if (password == "") {
+                    alert("Field cannot be empty.");
+                } else if (password != confirmpassword) {
+                    alert("Passwords did not match, try again.");
+                    return false;
+                } else if (password == confirmpassword) {
+                    alert("Password Match");
+                }
+            } );
+        </script>
     </div>
 </body>
 </html>
